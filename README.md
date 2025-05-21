@@ -7,6 +7,7 @@ kubectl
 Docker 
 
  Step 1: Install kubectl
+ 
     curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
     
     chmod +x kubectl
@@ -14,6 +15,7 @@ Docker
     sudo mv kubectl /usr/local/bin/
 
  Step 2: Install & Start Minikube(Ubuntu)
+ 
     curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
     
     sudo install minikube-linux-amd64 /usr/local/bin/minikube
@@ -21,6 +23,7 @@ Docker
     minikube start
 
  Step 3: Install Docker
+ 
     sudo apt install docker.io -y
     
     sudo usermod -aG docker $USER 
@@ -31,6 +34,7 @@ Docker
 
 
 Step 4:Start Minikube (with Docker driver):
+
    minikube start --driver=docker
 
  ![Screenshot 2025-05-21 102949](https://github.com/user-attachments/assets/b60ae36d-907d-4442-9963-254d3489b4b2)
@@ -47,10 +51,12 @@ Step 8: kubectl apply -f service.yaml
 Step 9: Verify Pods & Services
   Check Pods:
     kubectl get pods
+    
 ![Screenshot 2025-05-21 103040](https://github.com/user-attachments/assets/6625a3b3-2ef2-4104-8c6f-0f93a6fc75ea)
 
   Check Services:
     kubectl get services
+    
 ![Screenshot 2025-05-21 1040192](https://github.com/user-attachments/assets/9755b5c1-4049-45df-abc2-ddad05a1f628)
 
 Step 10: Scale the Deployment
