@@ -63,8 +63,10 @@ Step 9: Verify Pods & Services
 ![Screenshot 2025-05-21 1040192](https://github.com/user-attachments/assets/9755b5c1-4049-45df-abc2-ddad05a1f628)
 
 Step 10: Scale the Deployment
+
    kubectl scale deployment nginx-deployment --replicas=4
-   Verify Scaling:
+   
+ Verify Scaling:
      kubectl get pods
 
 ![Screenshot 2025-05-21 1040191](https://github.com/user-attachments/assets/4dc90564-ae15-44a3-99c2-c6b7dcf90a07)
@@ -72,7 +74,8 @@ Step 10: Scale the Deployment
 Step 11: Use kubectl describe for Debugging
    kubectl describe pod <pod-name>
    
-![Screenshot 2025-05-21 104019](https://github.com/user-attachments/assets/ae016f78-52dc-49e9-9c33-377abefb349f)
+![Screenshot 2025-05-21 104151](https://github.com/user-attachments/assets/14e92079-9f35-45e1-a721-41e685a807d0)
+
 
 Step 12: Use kubectl port-forward  
    kubectl port-forward service/nginx-service 8080:80
