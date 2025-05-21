@@ -2,9 +2,12 @@ Objective
 Deploy and manage a containerized app on Kubernetes using Minikube.
 
 Tools Required
-Minikube
-kubectl
-Docker 
+
+ Minikube
+
+ kubectl
+
+ Docker 
 
  Step 1: Install kubectl
  
